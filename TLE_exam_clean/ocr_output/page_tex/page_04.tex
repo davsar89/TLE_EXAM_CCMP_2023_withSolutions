@@ -1,0 +1,39 @@
+\begin{itemize}
+    \item L'atmosphère est supposée en équilibre de telle sorte que la loi de la statique des fluides s'y applique et on ne prendra en compte que le poids assimilé à la force gravitationnelle.
+    \item La pression à la surface de la Terre est $P_0 = 1\text{ bar}$ en $z = 0$, la température $T_0 = 290\text{ K}$.
+    \item La température évolue selon la loi $T(z) = T_0(1 - z/\ell)$ avec $\ell = 50\text{ km}$, ce qui limite le modèle nécessairement à des altitudes inférieures à $\ell$.
+\end{itemize}
+
+\begin{itemize}
+    \item[8.] Rappeler, sans démonstration, l'expression vectorielle de la loi de la statique d'un fluide de masse volumique $\mu$.
+    
+    Montrer que la pression atmosphérique $P(z)$ obéit à l'équation différentielle suivante :
+    \begin{equation*}
+        \frac{\mathrm{d}P}{\mathrm{d}z} = -F(z)\frac{P}{H} \qquad \text{avec} \qquad F(z) = \frac{1}{(1 - z/\ell)\left(1 + z/R_T\right)^2}
+    \end{equation*}
+    où $H$ est une distance caractéristique que l'on exprimera en fonction de $R$, $T_0$, $M$ et $g_0$. Évaluer numériquement $H$ en kilomètres avec un seul chiffre significatif.
+\end{itemize}
+
+En décomposant la fonction $F$, on peut écrire $F(z) = \frac{\alpha}{1 - z/\ell} + \frac{\beta + \gamma z}{\left(1 + z/R_T\right)^2}$ en introduisant les constantes $\alpha = [1 + \epsilon(2 + \epsilon)]^{-1}$, $\beta = \alpha\epsilon(2 + \epsilon)$ et $\gamma = \alpha\epsilon/R_T$ à condition de poser $\epsilon = \ell/R_T$.
+
+\begin{itemize}
+    \item[9.] Montrer que dans les conditions du problème on peut prendre $\alpha \simeq 1$, $\beta \simeq 2\epsilon$ et $\gamma \simeq \epsilon/R_T$.
+    
+    Montrer que la pression $P(z)$ dans l'atmosphère est alors donnée par :
+    \begin{equation}
+        P(z) = P_0 \left(\frac{1 - z/\ell}{1 + z/R_T}\right)^\xi \exp\left[-\frac{z}{\chi(1 + z/R_T)}\right]
+    \end{equation}
+    dans laquelle on précisera l'expression des quantités $\xi$ et $\chi$ en fonction de $\ell$, $H$ et $R_T$.
+    
+    \item[10.] Quelle expression simplifiée de $P(z)$ proposeriez-vous à la lumière de l'expression précédente et des valeurs des grandeurs engagées dans celle-ci ? À quoi cela revient-il à faire ?
+\end{itemize}
+
+Sur la figure 5 ci-dessous, on a représenté sur le même schéma d'une part le modèle de pression de l'équation (1) pour les valeurs adaptées des paramètres et d'autre part la valeur de la pression mesurées par des sondes atmosphériques et spatiales.
+
+\TLEFigure{5}{Pression de l'air atmosphérique}
+
+\begin{itemize}
+    \item[11.] Pour quelle raison principale, le modèle étudié cesse-t-il d'être correct à partir d'une altitude de l'ordre de $z = 20\text{ km}$ alors qu'il est censé fonctionner potentiellement jusqu'à $50\text{ km}$ ?
+    
+    \item[12.] Discuter la possibilité d'observation des sylphes en lien avec la pression partielle en dioxygène depuis la Terre et depuis l'ISS.
+\end{itemize}
