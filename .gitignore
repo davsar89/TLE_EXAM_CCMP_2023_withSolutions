@@ -1,0 +1,48 @@
+# LaTeX intermediate build files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex(busy)
+*.dvi
+*.xdv
+
+# Bibliography
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+# Index / glossary
+*.idx
+*.ilg
+*.ind
+*.glo
+*.gls
+*.glg
+*.acn
+*.acr
+*.alg
+*.ist
+
+# Beamer
+*.nav
+*.snm
+*.vrb
+
+# Misc
+*.spl
+*.figlist
+*.makefile
+*.auxlock
+*.pgf-plot.gnuplot
+*.pgf-plot.table
+
+# Python
+__pycache__/
+*.pyc
